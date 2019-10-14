@@ -1,0 +1,24 @@
+
+
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.writing-vertical {
+  writing-mode: vertical-rl;
+}
+
+
+.header-bg-image {
+    height: 496px;
+  
+}
+
+//行動板時padding為0
+.d-p-0{
+    @media (max-width: 767px) {
+    padding: 0;
+   }
+}

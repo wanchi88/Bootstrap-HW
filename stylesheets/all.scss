@@ -1,0 +1,20 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+//Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../stylesheets/helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+@import "../stylesheets/base";
+@import "../stylesheets/index";
+@import "../stylesheets/page-login";
+@import "../stylesheets/page-product";
+
+
+
+@import "../stylesheets/components/groundglass";
+@import "../stylesheets/components/card";
+@import "../stylesheets/components/stepbystep";
+@import "../stylesheets/components/listgroup";

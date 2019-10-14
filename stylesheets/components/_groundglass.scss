@@ -1,0 +1,51 @@
+//毛玻璃效果
+.banner-item{
+    
+    height: 256px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid white;
+    &.active , &:hover{
+      .banner-bg{
+        transition: filter .5s;
+        filter: blur(0px);
+      }
+      .banner-bg-cover{
+        background-color: rgba(theme-color('sub'), .8);
+      };
+      color:$primary;
+
+    }
+
+    
+}
+
+.banner-text{
+  z-index: 1;
+  letter-spacing:10px;
+ 
+}
+.banner-bg , 
+.banner-bg-cover{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.banner-bg{
+  transition: filter .5s;
+  filter: blur(3px);
+}
+.banner-bg-cover{
+  
+  background-color: rgba(theme-color('primary'), .8);
+}

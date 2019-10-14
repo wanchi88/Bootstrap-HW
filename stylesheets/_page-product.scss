@@ -1,0 +1,38 @@
+.header-bg-image{
+    position: relative;
+    img{
+        position: absolute;
+        top:40px;
+        right: 40px;
+        width: 89px;
+    }
+}
+
+
+
+//分頁
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: $pagination-padding-y $pagination-padding-x;
+  margin-left: -$pagination-border-width;
+  line-height: $pagination-line-height;
+  color: $pagination-color;
+  background-color: $pagination-bg;
+  border: $pagination-border-width solid $pagination-border-color;
+
+  &:hover {
+    z-index: 2;
+    color: $white;
+    text-decoration: none;
+    background-color: $primary;
+    border-color: $pagination-hover-border-color;
+  }
+
+  &:focus {
+    z-index: 2;
+    outline: $pagination-focus-outline;
+    box-shadow: $pagination-focus-box-shadow;
+  }
+}

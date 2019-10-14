@@ -1,0 +1,36 @@
+
+//card
+.card-img{
+  position: relative;
+}
+.card-tag{
+  position: absolute;
+  top: 0px;
+  left: 21px;
+  width: 36px;
+  height: 107px;
+  writing-mode: vertical-lr;
+  letter-spacing: 5px;
+  line-height: 2.5;
+}
+.card-collect{
+  position: absolute;
+  top: 19px;
+  right: 22px;
+}
+
+//card-checkbox custom 用checkbox做愛心
+.card-checkbox input[type="checkbox"],
+.card-checkbox .checked {
+    display: none;
+}
+//"~"是選擇同層級的後方元素
+.card-checkbox input[type="checkbox"]:checked ~ .checked
+{
+    display: inline-block;
+}
+ 
+.card-checkbox input[type="checkbox"]:checked ~ .unchecked
+{
+    display: none;
+}

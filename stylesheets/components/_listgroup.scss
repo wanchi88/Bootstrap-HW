@@ -1,0 +1,38 @@
+//list-group
+.list-group-item-action {
+  width: 100%; // For `<button>`s (anchors become 100% by default though)
+  color: $primary;
+  text-align: inherit; // For `<button>`s (anchors inherit)
+
+  // Hover state
+  @include hover-focus {
+    z-index: 1; // Place hover/focus items above their siblings for proper border styling
+    color: $primary;
+    text-decoration: none;
+    background-color: $base;
+  }
+
+  &:active {
+    color: $primary;
+    background-color: $base;
+  }
+}
+
+
+//list-group外框設定
+.list-group-outline-item{
+    background-color:$primary;
+    color: $base;
+    border-color:$base;
+    font-weight: bold;
+    
+
+    &:hover{
+        background-color: $base;
+        color:$primary;
+    }
+    &.active{
+        background-color: $base;
+        color:$primary;
+    }
+}

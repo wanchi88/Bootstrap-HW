@@ -1,0 +1,31 @@
+
+
+
+//首頁的section排版
+
+.section{
+  max-height: 420px;
+  .section-image{
+    margin-top: -20px;
+    margin-bottom: -20px;
+    width: 460px; 
+    height: 460px;
+   @media (max-width: 767px) {
+     height: 250px;
+     margin-top: 0;
+   }
+  }
+  .section-text{
+    max-height: 420px;
+    line-height: 3;
+    color: lighten($primary, 30%);
+    @media (max-width: 767px) {
+     line-height: 1.5;
+     writing-mode: lr-tb;
+   }
+  }
+  .section-slogan{
+    margin-top: -20px;
+  }
+
+}

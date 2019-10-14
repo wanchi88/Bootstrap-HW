@@ -1,0 +1,75 @@
+//progress step by step
+
+.progress-step{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &:after{
+    content:'';
+    height: 2px;
+    background-color: $primary-light;
+    position: absolute;
+    top:50%;
+    left: 0;
+    right: 0;
+    
+  }
+}
+.progress-step-circle{
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
+  background-color: $primary;
+  border:1px solid $primary-light;
+  z-index:1;
+  position: relative;
+}
+
+.progress-step-circle.active{
+  border-color:#fff;
+  &:after{
+    content:'';
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    border:1px solid $base;
+    background-color: $base;
+    position: absolute;
+    top: 15%;
+    left: 4px;
+  }
+}
+
+.progress-step-done{
+  color:$primary;
+  background-color: $base;
+  font-size:20px;
+  text-align: center;
+  &:before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    
+  }
+ 
+}
+//主題色系
+.progress-step-dark{
+  
+  &:after{
+    content:'';
+    background-color: $primary;
+  }  
+}
+.progress-step-dark-done{
+    color:$base;
+    background-color: $primary;
+    font-size:20px;
+    text-align: center;
+    &:before{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f00c";
+    }
+
+}

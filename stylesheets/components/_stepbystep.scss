@@ -7,7 +7,7 @@
   &:after{
     content:'';
     height: 2px;
-    background-color: $primary-light;
+    background-color: #8DA291;
     position: absolute;
     top:50%;
     left: 0;
@@ -20,7 +20,7 @@
   height: 30px;
   border-radius:50%;
   background-color: $primary;
-  border:1px solid $primary-light;
+  border:1px solid #8DA291;
   z-index:1;
   position: relative;
 }

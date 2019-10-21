@@ -1,0 +1,17 @@
+
+.item-border{
+    
+    @media (min-width: 767px) {
+        border-bottom: 1px solid $base;
+        
+    }
+
+}
+.item-price-border{
+    border-top: 1px solid $base;
+    border-bottom:1px solid $base;
+     @media (min-width: 767px) {
+        border: 0;
+        
+    }
+}

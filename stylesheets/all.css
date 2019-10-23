@@ -13324,28 +13324,24 @@ a.text-base:hover, a.text-base:focus {
   }
 }
 
-.section {
-  max-height: 420px;
-}
-
 .section .section-image {
-  margin-top: -20px;
-  margin-bottom: -20px;
-  width: 460px;
-  height: 460px;
+  width: 100%;
+  min-height: 250px;
+  margin: 0px -10px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .section .section-image {
-    height: 250px;
-    margin-top: 0;
+    min-height: 460px;
+    margin-top: -20px;
+    margin-bottom: -20px;
   }
 }
 
 .section .section-text {
   max-height: 420px;
   line-height: 3;
-  color: #87ae8f;
+  color: #3F5D45;
 }
 
 @media (max-width: 767px) {
@@ -13354,6 +13350,7 @@ a.text-base:hover, a.text-base:focus {
     -webkit-writing-mode: lr-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: lr-tb;
+    height: auto;
   }
 }
 
@@ -13431,6 +13428,66 @@ a.text-base:hover, a.text-base:focus {
 @media (min-width: 767px) {
   .item-price-border {
     border: 0;
+  }
+}
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2");
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.summary {
+  background-color: #3F5D45;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .summary {
+    background-color: #fff;
+    color: #3F5D45;
+  }
+}
+
+.summary-title {
+  background-color: #3F5D45;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+@media (max-width: 767px) {
+  .summary-title {
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    border-color: #EAF0ED;
+  }
+}
+
+.summary-table {
+  color: #EAF0ED;
+}
+
+@media (max-width: 767px) {
+  .summary-table {
+    color: #3F5D45;
   }
 }
 

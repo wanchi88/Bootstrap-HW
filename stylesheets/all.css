@@ -13318,6 +13318,10 @@ a.text-base:hover, a.text-base:focus {
   color: #8DA291;
 }
 
+.btn {
+  color: #3F5D45;
+}
+
 @media (max-width: 767px) {
   .d-p-0 {
     padding: 0;
@@ -13565,7 +13569,7 @@ a.text-base:hover, a.text-base:focus {
   position: absolute;
   top: 0px;
   left: 21px;
-  width: 36px;
+  width: 40px;
   height: 107px;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;

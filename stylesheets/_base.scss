@@ -20,6 +20,11 @@
     color: #8DA291;
 }
 
+.btn{
+    color: $primary;
+}
+
+
 //行動板時padding為0
 .d-p-0{
     @media (max-width: 767px) {
